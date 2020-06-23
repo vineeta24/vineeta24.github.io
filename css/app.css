@@ -5,29 +5,25 @@
     src: url(../fonts/ShBold.otf);
     font-weight: 700;
     font-style: normal; 
-}
-  
+} 
 @font-face {
     font-family: 'ShBook';
     src: url(../fonts/ShBook.otf);
     font-weight: normal;
     font-style: normal; 
 }
-
 @font-face {
     font-family: 'ShMedium';
     src: url(../fonts/ShMedium.otf);
     font-weight: normal;
     font-style: normal; 
 }
-
 @font-face {
     font-family: 'ShSemibold';
     src: url(../fonts/ShSemibold.otf);
     font-weight: normal;
     font-style: normal; 
 }
-
 @font-face {
     font-family: 'GTWalsheimPro';
     src: url(../fonts/GTWalsheimPro.otf);
