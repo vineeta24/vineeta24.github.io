@@ -5,8 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CSS it</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
-    hello
+    <header>
+        <nav class="navbar navbar-dark example-navbar">
+            <a class="navbar-brand" href="../">CSS it</a>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
+        </nav>
+    </header>
+    <section class="main-home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 main-home-text">
+                    <div class="text-wrapper">
+                        <h1 class="title">
+                            Quick style<br/>
+                            Collect code</br>
+                            Thoughtful design
+                        </h1>  
+                        <p class="text">
+                            Uplaunch is an HTML5 pack of eye-catching coming soon pages that help to start your project extremely fast. Engage with your customers with the elegant ready-to-use solution. 
+                        </p>
+                        <div class="btns-group">
+                            <div class="btn-item">
+                                <a href="./button/button1.html" class="head-btn light-bg">live preview</a>
+                            </div>
+                            <div class="btn-item">
+                                <a href="https://github.com/vineeta24/css-it" class="head-btn dark-bg">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sideNav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="./button/button1.html">button</a>
+            <a href="./gradient/gradient1.html">gradient</a>
+        </div>
+    </section>
+
+
+    <script>
+        function openNav() {
+          document.getElementById("sideNav").style.width = "250px";
+        }
+        function closeNav() {
+          document.getElementById("sideNav").style.width = "0";
+        }
+    </script>
 </body>
 </html>

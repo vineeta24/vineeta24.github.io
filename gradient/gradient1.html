@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS it</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="./gradient-style1.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark example-navbar">
+            <a class="navbar-brand" href="../">CSS it</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse example-nav" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#staticBackdrop">
+                    View Code
+                    </button>
+                  </li>
+                </ul>
+               </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container-fluid btn-home">
+            <div class="row btn-wrapper">
+                <div class="col-lg-6 btn-demo">
+                    <div class="btn-demo">
+                        <div id="myGradient"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 btn-variables">
+                    <div class="variable-wrapper">
+                        <h3 class="text">CSS Property</h3>
+                        <form>
+                        <div>
+                        <label>background : </label><br/>
+                            <input type="text" id="background" name="background" value="" style="width: 300px;">
+                        </div>
+                        <div>
+                            <input type="radio" name="gradient" value="linear-gradient" checked>
+                            <label for="gradient">linear-gradient</label><br>
+                            <input type="radio" name="gradient" value="radial-gradient" >
+                            <label for="gradient">radial-gradient</label><br>
+                            <input type="number" id="deg" name="deg" min="0" max="360">
+                            <label for="deg">deg</label>
+                            <input type="color" id="color1" name="color1" value="#ff9a9e" >
+                            <input type="color" id="color2" name="color2" value="#fad0c4" >
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Code</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p>
+              <b>HTML</b><br/>
+              <span class="main">&lt;div id="myGradient" &gt;&lt;/div&gt;</span>
+            </p>
+            <br/>
+            <p>
+                <b>CSS</b><br/>
+                <span class="main">#myGradient {</span><br/>
+                    <div style="margin-left: 20px;">
+                        <span id="cssCode"></span>
+                    </div>
+                <span class="main">}</span>
+            </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="./gradient-style1.js"></script>
+</body>
+</html>

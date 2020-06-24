@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700,900&display=swap');
+
+@font-face {
+    font-family: 'ShBold';
+    src: url(../fonts/ShBold.otf);
+    font-weight: 700;
+    font-style: normal; 
+}
+  
+@font-face {
+    font-family: 'ShBook';
+    src: url(../fonts/ShBook.otf);
+    font-weight: normal;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'ShMedium';
+    src: url(../fonts/ShMedium.otf);
+    font-weight: normal;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'ShSemibold';
+    src: url(../fonts/ShSemibold.otf);
+    font-weight: normal;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'GTWalsheimPro';
+    src: url(../fonts/GTWalsheimPro.otf);
+    font-weight: normal;
+    font-style: normal; 
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+}
+p {
+    margin: 0; 
+}
+a, button {
+    text-decoration: none;
+    cursor: pointer; 
+}
+a:hover {
+    text-decoration: none; 
+}
+
+.example-navbar {
+    position: absolute;
+    z-index: 10;
+}
+.example-navbar .navbar-brand {
+    font-size: 25px;
+}
+.main-home {
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    padding: 40px 20px 40px 0;
+    position: relative;
+}  
+.main-home-text {
+    padding-left: 2rem;
+}
+.main-home-text .text-wrapper {
+    max-width: 400px;
+}
+.main-home-text .text-wrapper .title {
+    font-family: 'ShBook';
+    font-size: 40px;
+    line-height: 35px;
+    letter-spacing: -3px;
+    margin: 50px 0;
+}
+.main-home-text .text-wrapper .text {
+    font-family: 'ShBook';
+    font-size: 16px;
+}
+.btns-group {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.btns-group .btn-item {
+    margin-right: 25px;
+}
+.head-btn.light-bg {
+    background: #FFFFFF;
+    color: #000000;
+}
+.head-btn.dark-bg {
+    background: #000000;
+    color: #FFFFFF !important;
+}
+.head-btn {
+    font-family: 'ShBold';
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.sidenav {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    background-color: #fd7c71;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+}
+.sidenav a {
+    font-family: 'ShBook';
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    padding: 10px 5px;
+    color: #FFFFFF;
+}
+.sidenav a:hover:not(.closebtn) {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.sidenav .closebtn {
+    font-size: 36px;
+}
+
+@media only screen and (min-width: 992px) {
+    .main-home { 
+        padding: 60px 0 100px 0;
+    }
+    .main-home-text .text-wrapper {
+        max-width: 600px;
+    }
+    .main-home-text .text-wrapper .title {
+        font-size: 72px;
+        line-height: 70px;
+    }
+    .main-home-text .text-wrapper .text {
+        font-size: 22px;
+    }
+    .head-btn {
+        font-size: 15px;
+    }
+}

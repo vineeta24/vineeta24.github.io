@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap');
+ 
+@font-face {
+    font-family: 'ShBook';
+    src: url(../fonts/ShBook.otf);
+    font-weight: normal;
+    font-style: normal; 
+}
+@font-face {
+    font-family: 'ShBold';
+    src: url(../fonts/ShBold.otf);
+    font-weight: 700;
+    font-style: normal; 
+}
+@font-face {
+    font-family: 'ShMedium';
+    src: url(../fonts/ShMedium.otf);
+    font-weight: normal;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'ShSemibold';
+    src: url(../fonts/ShSemibold.otf);
+    font-weight: normal;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'GTWalsheimPro';
+    src: url(../fonts/GTWalsheimPro.otf);
+    font-weight: normal;
+    font-style: normal; 
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+} 
+p {
+    margin: 0; 
+}
+a, button {
+    text-decoration: none;
+    cursor: pointer; 
+}
+a:hover {
+    text-decoration: none; 
+}
+
+.example-navbar {
+    background: #696969;
+    z-index: 100;
+}
+.example-nav {
+    justify-content: flex-end;
+}
+.example-navbar .navbar-brand {
+    font-size: 25px;
+}
+.btn-home {
+    background: #FFFFFF;
+    position: relative;
+}
+
+/* button demo */
+.btn-home .btn-wrapper .btn-demo {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-home .btn-wrapper .btn-demo > #myGradient {
+    width: 400px;
+    height: 300px;
+    border: none;
+    background: linear-gradient(0deg, #ff9a9e, #fad0c4);
+    transition: all 0.2s ease-in;
+}
+
+/* button variables */
+.btn-home .btn-wrapper .btn-variables{
+    background-color: rgb(183, 238, 238);
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    overflow-x: hidden;
+}
+.btn-home .btn-wrapper .btn-variables .variable-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.btn-home .btn-wrapper .btn-variables .variable-wrapper h3 {
+    font-family: 'ShBold';
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+.btn-home .btn-wrapper .btn-variables .variable-wrapper form {
+    font-family: 'ShBook';
+    font-size: 16px;
+}
+.btn-home .btn-wrapper .btn-variables .variable-wrapper form > div {
+    margin-bottom: 15px;
+}
+.btn-home .btn-wrapper .btn-variables .variable-wrapper form label {
+    font-family: 'ShSemiBold';
+}
+.btn-home .btn-wrapper .btn-variables .variable-wrapper span {
+    font-size: 14px;
+}
+.btn-home .btn-wrapper .btn-variables .variable-wrapper input, select {
+    padding: 5px;
+    border: none;
+    font-size: 13px;
+    color: #616161;
+}
+.btn-home .btn-wrapper .btn-variables .variable-wrapper #lg-input {
+    width: 300px;
+}
+
+/* button code */
+.modal .modal-body {
+    background: #111;
+}
+.modal .modal-body p > b {
+    color: coral;
+}
+
+.modal .modal-body span {
+    font-size: 14px;
+}
+.modal .modal-body span.main {
+    color: #f7f3f3;
+}
+.modal .modal-body span#cssCode {
+    color: #dab745;
+}
+
+@media only screen and (min-width: 992px) {
+    .btn-home .btn-wrapper .btn-demo {
+        height: 90vh;
+    }
+    .btn-home .btn-wrapper .btn-variables {
+        top: 0 !important;
+    }   
+    .btn-home .btn-wrapper .btn-variables .variable-wrapper {
+        margin-top: 70px;
+    }
+    .btn-home .btn-wrapper .btn-variables .variable-wrapper form {
+        font-size: 18px;
+    }
+    .btn-home .btn-wrapper .btn-variables .variable-wrapper form > div {
+        margin-bottom: 20px;
+    }
+    .btn-home .btn-wrapper .btn-variables .variable-wrapper input, select {
+        font-size: 18px;
+    }
+}
+

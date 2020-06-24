@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS it</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="./button-style1.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark example-navbar">
+            <a class="navbar-brand" href="../">CSS it</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse example-nav" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#staticBackdrop">
+                    View Code
+                    </button>
+                  </li>
+                </ul>
+               </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container-fluid btn-home">
+            <div class="row btn-wrapper">
+                <div class="col-lg-6 btn-demo">
+                    <div class="btn-demo">
+                        <a href="#" id="myBtn">submit</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 btn-variables">
+                    <div class="variable-wrapper">
+                        <h3 class="text">CSS Property</h3>
+                        <form>
+                        <div>
+                        <label>background : </label>
+                            <input type="color" id="" name="background" value="#4facfe"/>
+                            <span>(# / rgb / rgba)</span>
+                        </div>
+                        <div>
+                            <label>background-image : </label>
+                            <input type="text" id="lg-input" name="background-image" value="linear-gradient(to right, #4facfe 0%, #00f2fe 100%)" />
+                            </div>
+                        <div>
+                            <label>color : </label>
+                            <input type="color" id="" name="color" value="#ffffff" />
+                            <span>(# / rgb / rgba)</span>
+                        </div>
+                        <div>
+                            <label>padding : </label>
+                            <input type="text" id="" name="padding" value="10px 30px" />
+                            <span>( px / rem )</span>
+                        </div>
+                        <div>
+                            <label>border-style : </label>
+                            <select id="border-style" name="border-style">
+                                <option value="solid">solid</option>
+                                <option value="dashed">dashed</option>
+                                <option value="dotted">dotted</option>
+                                <option value="none">none</option>
+                              </select>
+                        </div>
+                        <div>
+                            <label>border-width : </label>
+                            <input type="text" name="border-width" value="1px" />
+                            <span>( px / rem )</span>
+                        </div>
+                        <div>
+                            <label>border-color : </label>
+                            <input type="color" id="" name="border-color" value="#4facfe" />
+                            <span>(# / rgb / rgba)</span>
+                        </div>
+                        <div>
+                            <label>border-radius : </label>
+                            <input type="text" name="border-radius" value="5px" />
+                            <span>( px / rem )</span>
+                        </div>
+                        <div>
+                            <label>font-size : </label>
+                            <input type="text" name="font-size" value="20px" />
+                        </div>
+                        <div>
+                            <label>font-family : </label>
+                            <select id="font-family" name="font-family" style="width: 250px;">
+                                <option value="ShBook">ShBook</option>
+                                <option value="Poppins">Poppins</option>
+                                <option value="Seaweed Script, cursive">Seaweed Script</option>
+                                <option value="'Rum Raisin', sans-serif">Rum Raisin</option>
+                              </select>
+                        </div>
+                        <div>
+                            <label>letter-spacing : </label>
+                            <input type="text" name="letter-spacing" value="0px" />
+                        </div>
+                        <div>
+                            <label>text-transform : </label>
+                            <select id="text-transform" name="text-transform">
+                                <option value="lowercase">lowercase</option>
+                                <option value="uppercase">uppercase</option>
+                                <option value="capitalize">capitalize</option>
+                              </select>
+                        </div>
+                        <div>
+                            <label>box-shadow : </label>
+                            <input type="text" id="lg-input" name="box-shadow" value="0 4px 8px 0 rgba(0, 0, 0, 0.2)" />
+                        </div>
+                        
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Code</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p>
+              <b>HTML</b><br/>
+              <span class="main">&lt;a href="#" id="myBtn" &gt;submit&lt;/a&gt;</span>
+            </p>
+            <br/>
+            <p>
+                <b>CSS</b><br/>
+                <span class="main">#myBtn {</span><br/>
+                    <div style="margin-left: 20px;">
+                        <span id="cssCode"></span>
+                    </div>
+                <span class="main">}</span>
+            </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="./button-style.js"></script>
+</body>
+</html>
